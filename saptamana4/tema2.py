@@ -77,7 +77,6 @@ print(df["RO"].index)
 
 for col in df.columns:
     ds = pandas.DataFrame(df[col])
-    ds.columns = ["coverage"]
     print(ds.to_dict())
     break
 
