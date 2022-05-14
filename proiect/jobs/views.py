@@ -16,7 +16,7 @@ class JobsView(LoginRequiredMixin, ListView):
 
 class CreateJobsView(LoginRequiredMixin, CreateView):
     model = Jobs
-    fields = ['type', 'title', "url", "description", "how_to_apply", "active"]
+    fields = ['type', 'title', "url", "description", "how_to_apply"]
     template_name = 'jobs/jobs_form.html'
 
     def get_success_url(self):
